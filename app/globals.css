@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827; /* 文字色を少し濃くハッキリさせる */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a; /* ダークモード時の背景色 */
+    --foreground: #f8fafc; /* ダークモード時のくっきりした白文字 */
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
